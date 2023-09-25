@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcola biglietto</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" placeholder="Dimmi nome e cognome" id="userName">
+        <input type="text" placeholder="Dimmi i km" id="userKm">
+        <select name="" id="">
+            <option value="Minorenne">Minorenne</option>
+            <option value="Maggiorenne">Maggiorenne</option>
+            <option value="Over65">Over65</option>
+        </select>
+        <br>
+        <button onclick="ticketGenerator(); return false">Genera</button>
+        <button onclick="; return false">Annulla</button>
+    </form>
+
+    <div>
+        Ciao <span id="name"></span>, vuoi percorrere <span id="km"></span>km. 
+    </div>
+    <div>
+        La tua carrozza è la n<span id="carrozza"></span>, il tuo biglietto è il n<span id="codiceCp"></span>. Il costo del tuo biglietto equivale a <span id="costo"></span>&euro;
+    </div>
+    
+
+
+    <script src="./assets/main.js"></script>
+</body>
+</html>
