@@ -9,22 +9,21 @@
 <body>
     <form action="">
         <input type="text" placeholder="Dimmi nome e cognome" id="userName">
-        <input type="text" placeholder="Dimmi i km" id="userKm">
-        <select name="" id="">
-            <option value="Minorenne">Minorenne</option>
-            <option value="Maggiorenne">Maggiorenne</option>
-            <option value="Over65">Over65</option>
+        <input type="number" min="1" placeholder="Dimmi i km" id="userKm">
+        <select name="" id="userAge">
+            <option value="minorenne">Minorenne</option>
+            <option value="maggiorenne">Maggiorenne</option>
+            <option value="over65">Over65</option>
         </select>
         <br>
         <button onclick="ticketGenerator(); return false">Genera</button>
-        <button onclick="; return false">Annulla</button>
+        <button onclick="cancellaCampi(); return false">Annulla</button>
     </form>
 
-    <div>
-        Ciao <span id="name"></span>, vuoi percorrere <span id="km"></span>km. 
-    </div>
-    <div>
-        La tua carrozza è la n<span id="carrozza"></span>, il tuo biglietto è il n<span id="codiceCp"></span>. Il costo del tuo biglietto equivale a <span id="costo"></span>&euro;
+    <div id="errore"></div>
+    <div id="result">
+        Ciao <span id="name"></span>, vuoi percorrere <span id="km"></span>km. <br>
+        La tua carrozza è la n<span id="carrozza"></span>, il tuo biglietto è il n<span id="codiceCp"></span>. Il costo del tuo biglietto equivale a <span id="prezzoFinale"></span>&euro;
     </div>
     
 
