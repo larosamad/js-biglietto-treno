@@ -12,8 +12,8 @@ function ticketGenerator() {
     console.log(km);
     document.getElementById('km').innerHTML = `${km}`;
 
-    if (isNaN(km) || km == '') {
-        document.getElementById('errore').innerHTML = `Inserisci un numero`;
+    if (isNaN(km) || km == '' || km < 1) {
+        document.getElementById('errore').innerHTML = `Inserisci un numero valido.`;
         document.getElementById('result').style.display = 'none';
 
     } else {
